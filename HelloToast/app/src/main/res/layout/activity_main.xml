@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <!-- Bouton pour afficher un message (Toast) -->
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="TOAST"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="#1F126E"/>
+
+    <!-- Zone principale (fond jaune) contenant le compteur -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FDFF85">
+
+        <!-- Affichage du nombre (compteur) -->
+        <TextView
+            android:id="@+id/valueDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="120sp"
+            android:textStyle="bold"
+            android:textColor="#1F126E"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <!-- Bouton pour incrémenter le compteur -->
+    <Button
+        android:id="@+id/btnIncrement"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="COUNT"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="6dp"
+        android:background="#1F126E" />
+
+</LinearLayout>
